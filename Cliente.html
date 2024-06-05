@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank - Dados do Cliente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Nubank</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gerencia.html">Gerência</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastrar Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <h2 class="text-center">Dados do Cliente</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nome: Gabriel da Silva</h3>
+                <p>CPF: 123.456.789-00</p>
+                <p>Email: joao@example.com</p>
+                <h3>Conta Corrente</h3>
+                <p>Saldo: R$ 1.500,00</p>
+                <h3>Poupança</h3>
+                <p>Saldo: R$ 3.000,00</p>
+                <h3>Cartão de Crédito</h3>
+                <p>Limite: R$ 2.000,00</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Extrato de Transações</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Valor (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/05/2024</td>
+                            <td>Compra no Supermercado</td>
+                            <td>-50,00</td>
+                        </tr>
+                        <tr>
+                            <td>03/05/2024</td>
+                            <td>Depósito</td>
+                            <td>500,00</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <h3>Contratar Serviços</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" class="form-control" name="servico">
+                            <option value="investimentos">Investimentos</option>
+                            <option value="emprestimos">Empréstimos</option>
+                            <option value="financiamentos">Financiamentos</option>
+                            <option value="previdencia">Previdência</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Contratar</button>
+                </form>
+                <h3>Realizar Transações</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="transacao">Transação:</label>
+                        <select id="transacao" class="form-control" name="transacao">
+                            <option value="pix">PIX</option>
+                            <option value="transferencia">Transferência</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Realizar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

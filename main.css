@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+
+header {
+    background-color: #4a154b;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Amarelo */
+}
+
+main {
+    padding: 2em;
+}
+
+form {
+    margin-top: 1em;
+}
+
+label, input, select, button {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input, select {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #4a154b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #820AD1; /* Roxo */
+}
+
+.container {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table {
+    background-color: #333;
+    color: #fff;
+}
+
+.table th, .table td {
+    border-color: #555;
+}
+
+.btn-primary {
+    background-color: #820AD1; /* Roxo */
+    border-color: #820AD1; /* Roxo */
+}
+
+.btn-primary:hover {
+    background-color: #4a154b; /* Roxo escuro */
+    border-color: #4a154b; /* Roxo escuro */
+}

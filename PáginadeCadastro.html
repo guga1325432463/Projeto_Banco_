@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank - Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Nubank</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gerencia.html">Gerência</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cliente.html">Dados do Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <h2 class="text-center">Cadastro de Novo Cliente</h2>
+        <form action="sucesso.html" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </main>
+</body>
+</html>

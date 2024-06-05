@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank - Gerência</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Nubank</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastrar Cliente</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cliente.html">Dados do Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <h2 class="text-center">Situação Atual do Banco</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Depósitos</h3>
+                <canvas id="depositosChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h3>Empréstimos</h3>
+                <canvas id="emprestimosChart"></canvas>
+            </div>
+        </div>
+        <script>
+            var ctxDepositos = document.getElementById('depositosChart').getContext('2d');
+            var depositosChart = new Chart(ctxDepositos, {
+                type: 'bar',
+                data: {
+                    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                    datasets: [{
+                        label: 'Depósitos (em R$)',
+                        data: [50000, 60000, 70000, 80000, 90000],
+                        backgroundColor: 'rgba(130, 10, 209, 0.5)',
+                        borderColor: 'rgba(130, 10, 209, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            var ctxEmprestimos = document.getElementById('emprestimosChart').getContext('2d');
+            var emprestimosChart = new Chart(ctxEmprestimos, {
+                type: 'line',
+                data: {
+                    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                    datasets: [{
+                        label: 'Empréstimos (em R$)',
+                        data: [20000, 25000, 30000, 35000, 40000],
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>
